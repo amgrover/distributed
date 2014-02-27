@@ -14,7 +14,7 @@ public class TCPClient {
 					socket.getOutputStream());
 			BufferedReader inFromServer = new BufferedReader(
 					new InputStreamReader(socket.getInputStream()));
-			outToServer.writeBytes(dataToSend);
+			outToServer.writeBytes(dataToSend+"/n");
 			ouString = inFromServer.readLine();
 
 		} catch (UnknownHostException e) {

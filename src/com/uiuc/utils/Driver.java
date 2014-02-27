@@ -17,13 +17,13 @@ public class Driver {
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
-		// TCPServer server = new TCPServer();
-		// server.startServer(Constants.TCP_PORT);
-		// TCPClient client = new TCPClient();
-		// client.send("Aman", Constants.TCP_IP, Constants.TCP_PORT);
-		Integer i = new Integer(1);
-		new Driver().recurse(i);
-		System.out.println(i);
+		TCPServer server = new TCPServer();
+		server.startServer(Constants.TCP_PORT);
+		TCPClient client = new TCPClient();
+		client.send("Aman", Constants.TCP_IP, Constants.TCP_PORT);
+//		Integer i = new Integer(1);
+//		new Driver().recurse(i);
+//		System.out.println(i);
 
 	}
 
